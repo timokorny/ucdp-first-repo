@@ -9,8 +9,8 @@ node {
    echo 'checked out'
    
    stage 'Build'
-		bat 'nuget restore src/WebApplication1.sln'
-		bat "\"${tool 'MSBuild'}\" src/WebApplication1.sln /p:Configuration=Release /p:Platform=\"Any CPU\" /p:ProductVersion=1.0.0.${env.BUILD_NUMBER}"
+		sh 'nuget restore src/WebApplication1.sln'
+		sh "\"${tool 'MSBuild'}\" src/WebApplication1.sln /p:Configuration=Release /p:Platform=\"Any CPU\" /p:ProductVersion=1.0.0.${env.BUILD_NUMBER}"
 
 		echo 'built done'
 }
