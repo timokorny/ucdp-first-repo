@@ -5,6 +5,6 @@ node {
 			doGenerateSubmoduleConfigurations: false, 
 			extensions: [], 
 			submoduleCfg: [], 
-			userRemoteConfigs: [[credentialsId: 'myCredentials', url: 'git@git.servername:https://github.com/timokorny/ucdp-first-repo.git']]])
+			userRemoteConfigs: [[credentialsId: 'myCredentials', url: 'https://github.com/timokorny/ucdp-first-repo.git']]])
    echo 'checked out'
 }
